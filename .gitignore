@@ -20,3 +20,6 @@ npm-debug.log*
 # Node (por si en el futuro se agrega tooling de build)
 node_modules/
 dist/
+
+# Fuentes originales (fotos, export de Claude Design): solo locales
+_fuentes/

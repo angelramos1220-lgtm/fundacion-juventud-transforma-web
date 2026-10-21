@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fundajutrans.org/sitemap.xml
