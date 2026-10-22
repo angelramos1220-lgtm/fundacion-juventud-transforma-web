@@ -7,7 +7,8 @@
 <meta name="description" content="Fundación sin ánimo de lucro en Chigorodó, Antioquia (Urabá). Acompañamos a niños, jóvenes y familias con proyectos educativos, sociales, deportivos y ambientales.">
 <link rel="canonical" href="https://fundajutrans.org/">
 <meta name="theme-color" content="#1B4332">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fundación Juventud que Transforma">
 <meta property="og:locale" content="es_CO">
@@ -29,6 +30,7 @@
   "@type": "NGO",
   "name": "Fundación Juventud que Transforma",
   "url": "https://fundajutrans.org/",
+  "logo": "https://fundajutrans.org/assets/img/logo-fundacion-juventud-que-transforma.2d8a79c7.jpg",
   "description": "Fundación sin ánimo de lucro en Chigorodó, Antioquia (Urabá). Acompañamos a niños, jóvenes y familias con proyectos educativos, sociales, deportivos y ambientales.",
   "email": "fundajutrans@gmail.com",
   "telephone": "+573125785054",
@@ -163,6 +165,10 @@
 }
 </style>
 <style>
+  /* scroll-padding-top = altura del encabezado (73px) para que los anclas no dejen el título tapado.
+     El recorte horizontal del contenedor principal usa overflow-x:clip (no crea contenedor de scroll,
+     así que no anula el position:sticky del encabezado); overflow-x:hidden queda como respaldo. */
+  html { scroll-padding-top:73px; }
   body { margin:0; background:#F6F8F5; font-family:'Inter', sans-serif; color:#1B2B22; }
   a { color:#2D6A4F; text-decoration:none; }
   a:hover { color:#40916C; }
@@ -175,13 +181,13 @@
   .fjt-iniciales { width:120px; height:120px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins', sans-serif; font-weight:700; font-size:38px; letter-spacing:1px; color:#fff; }
 </style>
 <style>@media (max-width: 900px){section[data-screen-label="Hero"]{grid-template-columns:1fr !important;gap:40px !important;}}</style></helmet>
-<div style="background:#F6F8F5; min-height:100vh; overflow-x:hidden;">
+<div style="background:#F6F8F5; min-height:100vh; overflow-x:hidden; overflow-x:clip;">
 
   <!-- Header -->
   <header style="position:sticky; top:0; z-index:50; background:rgba(246,248,245,0.92); backdrop-filter:blur(10px); border-bottom:1px solid rgba(27,67,50,0.08);">
     <div style="max-width:1240px; margin:0 auto; padding:14px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px;">
       <a href="#inicio" style="display:flex; align-items:center; gap:10px;">
-        <img src="assets/img/logo.cfa1534c.webp" alt="Logo de la Fundación Juventud que Transforma" width="44" height="44" style="width:44px; height:44px; border-radius:50%; object-fit:cover; display:block;">
+        <img src="assets/img/logo-circulo.471d8efc.webp" alt="Logo de la Fundación Juventud que Transforma" width="44" height="44" style="width:44px; height:44px; border-radius:50%; object-fit:cover; display:block;">
         <span style="font-family:'Poppins', sans-serif; font-weight:700; font-size:15px; color:#1B4332; line-height:1.2; max-width:180px;">Juventud que<br>Transforma</span>
       </a>
       <nav style="display:none; gap:16px; font-size:13.5px; font-weight:600; white-space:nowrap;" data-desktop-nav="1">
@@ -227,7 +233,7 @@
       </div>
     </div>
     <div style="position:relative;">
-      <div class="fjt-hero-carousel" role="img" aria-label="Fotos de actividades de la Fundación Juventud que Transforma"><img class="fjt-hero-slide" alt="" style="animation-delay:0s;" src="assets/img/hero-1.d3931be6.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:4s;" src="assets/img/aceite-que-transforma.eee52e32.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:8s;" src="assets/img/hero-3.6eef84c4.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:12s;" src="assets/img/hero-4.5cdc812f.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:16s;" src="assets/img/hero-5.d45da33b.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:20s;" src="assets/img/hero-6.8b01b648.webp"><div class="fjt-hero-vignette"></div><div class="fjt-hero-dots"><span class="fjt-hero-dot" style="animation-delay:0s;"></span><span class="fjt-hero-dot" style="animation-delay:4s;"></span><span class="fjt-hero-dot" style="animation-delay:8s;"></span><span class="fjt-hero-dot" style="animation-delay:12s;"></span><span class="fjt-hero-dot" style="animation-delay:16s;"></span><span class="fjt-hero-dot" style="animation-delay:20s;"></span></div><style>.fjt-hero-carousel{width:100%;aspect-ratio:4/5;border-radius:28px;overflow:hidden;position:relative;background:#1B4332;}.fjt-hero-carousel .fjt-hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1);animation:fjtHeroCycle 24s infinite;}.fjt-hero-carousel .fjt-hero-slide:first-child{opacity:1;}@keyframes fjtHeroCycle{0%{opacity:0;transform:scale(1)}4%{opacity:1;transform:scale(1)}15%{opacity:1;transform:scale(1.08)}19%{opacity:0;transform:scale(1.1)}100%{opacity:0;transform:scale(1.1)}}.fjt-hero-vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(9,26,18,0.55) 100%);}.fjt-hero-dots{position:absolute;left:20px;bottom:20px;z-index:2;display:flex;gap:6px;}.fjt-hero-dot{width:7px;height:7px;border-radius:999px;background:rgba(255,255,255,0.5);animation:fjtDotCycle 24s infinite;}.fjt-hero-dot:first-child{width:22px;background:#95D5B2;}@keyframes fjtDotCycle{0%{width:7px;background:rgba(255,255,255,0.5)}4%{width:22px;background:#95D5B2}15%{width:22px;background:#95D5B2}19%{width:7px;background:rgba(255,255,255,0.5)}100%{width:7px;background:rgba(255,255,255,0.5)}}@media (prefers-reduced-motion: reduce){.fjt-hero-slide,.fjt-hero-dot{animation:none !important;}.fjt-hero-slide:first-child{opacity:1 !important;}.fjt-hero-dot:first-child{width:22px !important;background:#95D5B2 !important;}}</style></div>
+      <div class="fjt-hero-carousel" role="img" aria-label="Fotos de actividades de la Fundación Juventud que Transforma"><img class="fjt-hero-slide" alt="" style="animation-delay:0s;" src="assets/img/hero-1.08dc156c.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:4s;" src="assets/img/aceite-que-transforma.eee52e32.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:8s;" src="assets/img/hero-3.6eef84c4.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:12s;" src="assets/img/hero-4.5cdc812f.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:16s;" src="assets/img/hero-5.d45da33b.webp"><img class="fjt-hero-slide" alt="" style="animation-delay:20s;" src="assets/img/hero-6.8b01b648.webp"><div class="fjt-hero-vignette"></div><div class="fjt-hero-dots"><span class="fjt-hero-dot" style="animation-delay:0s;"></span><span class="fjt-hero-dot" style="animation-delay:4s;"></span><span class="fjt-hero-dot" style="animation-delay:8s;"></span><span class="fjt-hero-dot" style="animation-delay:12s;"></span><span class="fjt-hero-dot" style="animation-delay:16s;"></span><span class="fjt-hero-dot" style="animation-delay:20s;"></span></div><style>.fjt-hero-carousel{width:100%;aspect-ratio:4/5;border-radius:28px;overflow:hidden;position:relative;background:#1B4332;}.fjt-hero-carousel .fjt-hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1);animation:fjtHeroCycle 24s infinite;}.fjt-hero-carousel .fjt-hero-slide:first-child{opacity:1;}@keyframes fjtHeroCycle{0%{opacity:0;transform:scale(1)}4%{opacity:1;transform:scale(1)}15%{opacity:1;transform:scale(1.08)}19%{opacity:0;transform:scale(1.1)}100%{opacity:0;transform:scale(1.1)}}.fjt-hero-vignette{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(9,26,18,0.55) 100%);}.fjt-hero-dots{position:absolute;left:20px;bottom:20px;z-index:2;display:flex;gap:6px;}.fjt-hero-dot{width:7px;height:7px;border-radius:999px;background:rgba(255,255,255,0.5);animation:fjtDotCycle 24s infinite;}.fjt-hero-dot:first-child{width:22px;background:#95D5B2;}@keyframes fjtDotCycle{0%{width:7px;background:rgba(255,255,255,0.5)}4%{width:22px;background:#95D5B2}15%{width:22px;background:#95D5B2}19%{width:7px;background:rgba(255,255,255,0.5)}100%{width:7px;background:rgba(255,255,255,0.5)}}@media (prefers-reduced-motion: reduce){.fjt-hero-slide,.fjt-hero-dot{animation:none !important;}.fjt-hero-slide:first-child{opacity:1 !important;}.fjt-hero-dot:first-child{width:22px !important;background:#95D5B2 !important;}}</style></div>
       <div style="position:absolute; bottom:-22px; left:-22px; background:#fff; border-radius:18px; padding:16px 22px; box-shadow:0 16px 40px rgba(27,67,50,0.14); display:flex; flex-direction:column; gap:2px;">
         <span style="font-family:'Poppins', sans-serif; font-size:26px; font-weight:800; color:#1B4332;">2018</span>
         <span style="font-size:12.5px; font-weight:600; color:#66766B;">Trabajando por Urabá</span>
@@ -387,6 +393,38 @@
           </div>
         </sc-for>
       </div>
+      <div style="display:flex; flex-direction:column; gap:28px; margin-top:12px;">
+        <div style="max-width:600px; display:flex; flex-direction:column; gap:10px;">
+          <h3 style="margin:0; font-family:'Poppins', sans-serif; font-size:22px; font-weight:700; color:#1B4332; letter-spacing:-0.3px;">Equipo de trabajo</h3>
+          <p style="margin:0; font-size:15.5px; line-height:1.6; color:#475B50;">Personas que dan su tiempo y su talento para que los proyectos sucedan.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:24px;">
+          <sc-for list="{{ equipoTrabajo }}" as="m" hint-placeholder-count="2">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center;">
+              <sc-if value="{{ m.img }}">
+                <img src="{{ m.img }}" alt="{{ m.name }}" width="120" height="120" loading="lazy" style="width:120px; height:120px; border-radius:50%; object-fit:cover; display:block;">
+              </sc-if>
+              <sc-if value="{{ m.sinFoto }}">
+                <span class="fjt-iniciales" style="background:{{ m.bg }}; color:{{ m.fg }};" aria-hidden="true">{{ m.iniciales }}</span>
+              </sc-if>
+              <div style="display:flex; flex-direction:column; gap:2px;">
+                <span style="font-family:'Poppins', sans-serif; font-size:15.5px; font-weight:700; color:#1B4332;">{{ m.name }}</span>
+                <span style="font-size:13.5px; color:#5C6F63;">{{ m.role }}</span>
+                <sc-if value="{{ m.desc }}">
+                  <p style="margin:6px 0 0; font-size:13.5px; line-height:1.55; color:#66766B; max-width:230px;">{{ m.desc }}</p>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+          <a href="#voluntariado" style="display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center; color:inherit; border-radius:16px;" style-focus="outline:3px solid #95D5B2; outline-offset:4px;">
+            <span class="fjt-iniciales" style="background:#D8EBDF; color:#1B4332;" aria-hidden="true">+</span>
+            <div style="display:flex; flex-direction:column; gap:2px;">
+              <span style="font-family:'Poppins', sans-serif; font-size:15.5px; font-weight:700; color:#1B4332;">Únete como voluntario</span>
+              <span style="font-size:13.5px; color:#5C6F63;">Súmate a nuestros proyectos</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -435,7 +473,7 @@
           <textarea name="mensaje" rows="{{ 3 }}" placeholder="Mensaje (opcional)" style="border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#fff; padding:12px 14px; font-family:inherit; font-size:14.5px; resize:vertical; box-sizing:border-box;" style-focus="border-color:#95D5B2; outline:2px solid rgba(149,213,178,0.3);"></textarea>
           <button type="submit" style="min-height:48px; border:none; border-radius:12px; background:#40916C; color:#fff; font-family:inherit; font-weight:700; font-size:15.5px; cursor:pointer;" style-hover="background:#52B788;" style-focus="outline:3px solid #95D5B2; outline-offset:2px;">Quiero donar</button>
         </form>
-        <form sc-camel-on-submit="{{ submitVoluntario }}" style="background:rgba(255,255,255,0.06); border:1px solid rgba(149,213,178,0.25); border-radius:20px; padding:30px; display:flex; flex-direction:column; gap:14px; text-align:left;">
+        <form id="voluntariado" sc-camel-on-submit="{{ submitVoluntario }}" style="scroll-margin-top:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(149,213,178,0.25); border-radius:20px; padding:30px; display:flex; flex-direction:column; gap:14px; text-align:left;">
           <h3 style="margin:0; font-family:'Poppins', sans-serif; font-size:18px; font-weight:700; color:#95D5B2;">Quiero ser voluntario</h3>
           <input name="nombre" placeholder="Nombre" required="{{ true }}" style="min-height:44px; border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#fff; padding:0 14px; font-family:inherit; font-size:14.5px; box-sizing:border-box;" style-focus="border-color:#95D5B2; outline:2px solid rgba(149,213,178,0.3);">
           <input name="correo" type="email" placeholder="Correo" required="{{ true }}" style="min-height:44px; border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.05); color:#fff; padding:0 14px; font-family:inherit; font-size:14.5px; box-sizing:border-box;" style-focus="border-color:#95D5B2; outline:2px solid rgba(149,213,178,0.3);">
@@ -455,7 +493,7 @@
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:40px;">
         <div style="display:flex; flex-direction:column; gap:14px;">
           <div style="display:flex; align-items:center; gap:10px;">
-            <img src="assets/img/logo-footer.074ddbf9.webp" alt="Logo de la Fundación Juventud que Transforma" width="38" height="38" style="width:38px; height:38px; border-radius:50%; object-fit:cover; display:block;">
+            <img src="assets/img/logo-circulo.471d8efc.webp" alt="Logo de la Fundación Juventud que Transforma" width="38" height="38" style="width:38px; height:38px; border-radius:50%; object-fit:cover; display:block;">
             <span style="font-family:'Poppins', sans-serif; font-weight:700; font-size:15px; color:#fff;">Juventud que Transforma</span>
           </div>
           <p style="margin:0; font-size:13.5px; line-height:1.6; max-width:260px;">Organización sin ánimo de lucro por la niñez, la juventud y las familias de Urabá.</p>
@@ -535,8 +573,11 @@ class Component extends DCLogic {
     { name:'Sandra Cecilia Abadía Cortes', role:'Presidenta y Representante Legal', img:'assets/img/equipo-sandra-abadia.54faed82.webp' },
     { name:'Viviana Ortiz López', role:'Vicepresidenta y Representante Legal Suplente', img:'', sinFoto:true, iniciales:'VO', bg:'#2D6A4F', fg:'#fff' },
     { name:'Daniel Josué Borja López', role:'Secretario', img:'', sinFoto:true, iniciales:'DB', bg:'#40916C', fg:'#fff' },
-    { name:'Carolina Ortiz López', role:'Tesorera', img:'', sinFoto:true, iniciales:'CO', bg:'#1B4332', fg:'#fff' },
-    { name:'Únete a nuestro equipo', role:'Coordinación de proyectos', img:'', sinFoto:true, iniciales:'+', bg:'#D8EBDF', fg:'#1B4332' }
+    { name:'Carolina Ortiz López', role:'Tesorera', img:'', sinFoto:true, iniciales:'CO', bg:'#1B4332', fg:'#fff' }
+  ];
+  equipoTrabajo = [
+    { name:'Gerson Andrés Mosquera Abadía', role:'Comunicaciones y marketing', desc:'Lidera las redes sociales y la comunicación de la fundación, y apoya todas nuestras jornadas.', img:'', sinFoto:true, iniciales:'GM', bg:'#2D6A4F', fg:'#fff' },
+    { name:'Johana Patricia Díaz Mena', role:'Psicóloga', desc:'', img:'', sinFoto:true, iniciales:'JD', bg:'#40916C', fg:'#fff' }
   ];
   beneficios = [
     'Visibilidad institucional ante la comunidad y aliados',
@@ -595,7 +636,7 @@ class Component extends DCLogic {
   renderVals() {
     return {
       valores: this.valores, lineas: this.lineas, proyectos: this.proyectos, logros: this.logros,
-      equipo: this.equipo, beneficios: this.beneficios, apoyoFormas: this.apoyoFormas,
+      equipo: this.equipo, equipoTrabajo: this.equipoTrabajo, beneficios: this.beneficios, apoyoFormas: this.apoyoFormas,
       mobileNavOpen: this.state.mobileNavOpen,
       toggleMobileNav: () => this.setState((s) => ({ mobileNavOpen: !s.mobileNavOpen })),
       closeMobileNav: () => this.setState({ mobileNavOpen: false }),

@@ -15,7 +15,8 @@ public/
   index.html            # página completa: plantilla + datos (script text/x-dc) + estilos
   robots.txt
   sitemap.xml
-  favicon.ico           # provisional, generado del logo embebido; reemplazar con el logo en alta
+  favicon.ico           # emblema del logo oficial (16, 32 y 48 px)
+  apple-touch-icon.png  # logo completo sobre blanco, 180x180
   assets/
     js/                 # dc-runtime, react, react-dom (nombres con hash o versión)
     fonts/              # Inter y Poppins, solo subconjuntos latin / latin-ext y pesos usados
@@ -24,8 +25,10 @@ tools/
   unbundle_claude_design.py   # convierte un export "bundle" de Claude Design en public/ + assets/
 Dockerfile              # imagen nginx:alpine lista para producción
 nginx.conf              # cache, gzip, cabeceras de seguridad y reglas de rutas
-_fuentes/               # (ignorada por git) fotos originales y el export original de Claude Design
+_fuentes/               # (ignorada por git) fotos originales, portafolio PDF, capturas y el export original de Claude Design
 ```
+
+El logo oficial sale del portafolio PDF (imagen de 473×431 de la página 1): `assets/img/logo-fundacion-juventud-que-transforma.*.jpg` es el logo completo que referencia el JSON-LD, `assets/img/logo-circulo.*.webp` es el recorte cuadrado que usan el encabezado y el pie, y de él salen también `favicon.ico` y `apple-touch-icon.png`.
 
 Los nombres de los activos llevan un hash del contenido (`hero-5.d45da33b.webp`), así que nginx los sirve con caché de un año e inmutable. Si cambias una imagen, cambia también el nombre y la referencia en `index.html`.
 
