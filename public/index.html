@@ -179,6 +179,11 @@
   .fjt-tap::before { content:""; position:absolute; left:0; right:0; top:-10px; bottom:-10px; }
   /* Junta directiva: iniciales mientras no haya foto */
   .fjt-iniciales { width:120px; height:120px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins', sans-serif; font-weight:700; font-size:38px; letter-spacing:1px; color:#fff; }
+  /* Impacto: 5 elementos. 1 columna en móvil, 3 en anchos intermedios (3+2) y 5 en una sola fila
+     cuando caben (5 x 220px + 4 x 32px de separación + 64px de margen = 1292px). Así nunca queda uno suelto. */
+  #impacto-stats { grid-template-columns:1fr !important; }
+  @media (min-width: 760px) { #impacto-stats { grid-template-columns:repeat(3, 1fr) !important; } }
+  @media (min-width: 1292px) { #impacto-stats { grid-template-columns:repeat(5, 1fr) !important; } }
 </style>
 <style>@media (max-width: 900px){section[data-screen-label="Hero"]{grid-template-columns:1fr !important;gap:40px !important;}}</style></helmet>
 <div style="background:#F6F8F5; min-height:100vh; overflow-x:hidden; overflow-x:clip;">
@@ -292,6 +297,10 @@
         <h2 style="margin:0; font-family:'Poppins', sans-serif; font-size:34px; font-weight:700; letter-spacing:-0.5px; text-wrap:balance;">Resultados construidos junto a nuestra comunidad</h2>
       </div>
       <div id="impacto-stats" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px;">
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <span data-counter="78" style="font-family:'Poppins', sans-serif; font-size:48px; font-weight:800; color:#95D5B2;">0</span>
+          <span style="font-size:15px; font-weight:600; color:#D7E8DE;">Personas atendidas actualmente</span>
+        </div>
         <div style="display:flex; flex-direction:column; gap:6px;">
           <span data-counter="18" style="font-family:'Poppins', sans-serif; font-size:48px; font-weight:800; color:#95D5B2;">0</span>
           <span style="font-size:15px; font-weight:600; color:#D7E8DE;">Familias acompañadas</span>
