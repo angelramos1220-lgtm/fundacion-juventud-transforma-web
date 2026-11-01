@@ -50,6 +50,27 @@
   ]
 }
 </script>
+<script>
+/* GA4 diferido, solo en producción: al primer gesto o 3 s tras la carga (respaldo: 10 s). */
+(function(){
+if(!/^(www\.)?fundajutrans\.org$/.test(location.hostname))return;
+var id='G-DD9XHS401W',gestos=['scroll','pointerdown','touchstart','keydown'],p=false;
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+window.gtag=gtag;
+gtag('js',new Date());
+gtag('config',id,{anonymize_ip:true,allow_google_signals:false,allow_ad_personalization_signals:false});
+function cargar(){
+if(p)return;p=true;
+gestos.forEach(function(g){removeEventListener(g,cargar,true);});
+var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);
+}
+gestos.forEach(function(g){addEventListener(g,cargar,{capture:true,passive:true});});
+function tope(){setTimeout(cargar,3000);}
+if(document.readyState==='complete')tope();else addEventListener('load',tope);
+setTimeout(cargar,10000);
+})();
+</script>
 <script src="assets/js/dc-runtime.2e38395c.js"></script>
 </head>
 <body>

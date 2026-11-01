@@ -67,6 +67,7 @@ Eso produce `salida/index.html` y `salida/assets/`, equivalentes al export origi
 3. Metadatos: `lang="es"`, título, descripción, Open Graph, canonical, favicon.
 4. Fuentes solo `latin`/`latin-ext` y pesos usados; fotos en WebP q75 con nombres descriptivos.
 5. `1.º y 2.º` en el nombre del torneo, clase `fjt-tap` en los enlaces del pie.
+6. Google Analytics 4 (`G-DD9XHS401W`): script de carga diferida en el `<head>`, antes de `dc-runtime`.
 
 Lo más práctico suele ser tratar `public/` como fuente de verdad y trasladar al HTML solo lo que cambió en el nuevo export.
 
