@@ -390,7 +390,7 @@
         <sc-for list="{{ equipo }}" as="m" hint-placeholder-count="5">
           <div style="display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center;">
             <sc-if value="{{ m.img }}">
-              <img src="{{ m.img }}" alt="{{ m.name }}" width="120" height="120" loading="lazy" style="width:120px; height:120px; border-radius:50%; object-fit:cover; display:block;">
+              <img src="{{ m.img }}" srcset="{{ m.srcset }}" alt="{{ m.alt }}" width="120" height="120" loading="lazy" style="width:120px; height:120px; border-radius:50%; object-fit:cover; display:block;">
             </sc-if>
             <sc-if value="{{ m.sinFoto }}">
               <span class="fjt-iniciales" style="background:{{ m.bg }}; color:{{ m.fg }};" aria-hidden="true">{{ m.iniciales }}</span>
@@ -411,7 +411,7 @@
           <sc-for list="{{ equipoTrabajo }}" as="m" hint-placeholder-count="2">
             <div style="display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center;">
               <sc-if value="{{ m.img }}">
-                <img src="{{ m.img }}" alt="{{ m.name }}" width="120" height="120" loading="lazy" style="width:120px; height:120px; border-radius:50%; object-fit:cover; display:block;">
+                <img src="{{ m.img }}" srcset="{{ m.srcset }}" alt="{{ m.alt }}" width="120" height="120" loading="lazy" style="width:120px; height:120px; border-radius:50%; object-fit:cover; display:block;">
               </sc-if>
               <sc-if value="{{ m.sinFoto }}">
                 <span class="fjt-iniciales" style="background:{{ m.bg }}; color:{{ m.fg }};" aria-hidden="true">{{ m.iniciales }}</span>
@@ -578,15 +578,15 @@ class Component extends DCLogic {
   ];
   equipo = [
     // Sin foto todavía: se muestran las iniciales (sinFoto) hasta tener la imagen (img).
-    { name:'Luis David Sepúlveda Cortés', role:'Socio fundador', img:'', sinFoto:true, iniciales:'LS', bg:'#1B4332', fg:'#fff' },
-    { name:'Sandra Cecilia Abadía Cortes', role:'Presidenta y Representante Legal', img:'assets/img/equipo-sandra-abadia.54faed82.webp' },
+    { name:'Luis David Sepúlveda Cortés', role:'Socio fundador', img:'assets/img/equipo-luis-sepulveda-120.4b097c6e.webp', srcset:'assets/img/equipo-luis-sepulveda-120.4b097c6e.webp 1x, assets/img/equipo-luis-sepulveda-240.0d32cd56.webp 2x', alt:'Luis David Sepúlveda Cortés, socio fundador' },
+    { name:'Sandra Cecilia Abadía Cortes', role:'Presidenta y Representante Legal', img:'assets/img/equipo-sandra-abadia-120.4c3b61d9.webp', srcset:'assets/img/equipo-sandra-abadia-120.4c3b61d9.webp 1x, assets/img/equipo-sandra-abadia-240.f9d23a7f.webp 2x', alt:'Sandra Cecilia Abadía Cortes, presidenta y representante legal' },
     { name:'Viviana Ortiz López', role:'Vicepresidenta y Representante Legal Suplente', img:'', sinFoto:true, iniciales:'VO', bg:'#2D6A4F', fg:'#fff' },
-    { name:'Daniel Josué Borja López', role:'Secretario', img:'', sinFoto:true, iniciales:'DB', bg:'#40916C', fg:'#fff' },
-    { name:'Carolina Ortiz López', role:'Tesorera', img:'', sinFoto:true, iniciales:'CO', bg:'#1B4332', fg:'#fff' }
+    { name:'Daniel Josué Borja López', role:'Secretario', img:'assets/img/equipo-daniel-borja-120.8e023d39.webp', srcset:'assets/img/equipo-daniel-borja-120.8e023d39.webp 1x, assets/img/equipo-daniel-borja-240.797e03e0.webp 2x', alt:'Daniel Josué Borja López, secretario' },
+    { name:'Carolina Ortiz López', role:'Tesorera', img:'assets/img/equipo-carolina-ortiz-120.089d26b3.webp', srcset:'assets/img/equipo-carolina-ortiz-120.089d26b3.webp 1x, assets/img/equipo-carolina-ortiz-240.4f23c6d9.webp 2x', alt:'Carolina Ortiz López, tesorera' }
   ];
   equipoTrabajo = [
-    { name:'Gerson Andrés Mosquera Abadía', role:'Comunicaciones y marketing', desc:'Lidera las redes sociales y la comunicación de la fundación, y apoya todas nuestras jornadas.', img:'', sinFoto:true, iniciales:'GM', bg:'#2D6A4F', fg:'#fff' },
-    { name:'Johana Patricia Díaz Mena', role:'Psicóloga', desc:'', img:'', sinFoto:true, iniciales:'JD', bg:'#40916C', fg:'#fff' }
+    { name:'Gerson Andrés Mosquera Abadía', role:'Comunicaciones y marketing', desc:'Lidera las redes sociales y la comunicación de la fundación, y apoya todas nuestras jornadas.', img:'assets/img/equipo-gerson-mosquera-120.77bbfe91.webp', srcset:'assets/img/equipo-gerson-mosquera-120.77bbfe91.webp 1x, assets/img/equipo-gerson-mosquera-240.25ea46ae.webp 2x', alt:'Gerson Andrés Mosquera Abadía, comunicaciones y marketing' },
+    { name:'Johana Patricia Díaz Mena', role:'Psicóloga', desc:'', img:'assets/img/equipo-johana-diaz-120.1937d545.webp', srcset:'assets/img/equipo-johana-diaz-120.1937d545.webp 1x, assets/img/equipo-johana-diaz-240.04b4835f.webp 2x', alt:'Johana Patricia Díaz Mena, psicóloga' }
   ];
   beneficios = [
     'Visibilidad institucional ante la comunidad y aliados',
